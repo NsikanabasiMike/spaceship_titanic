@@ -31,12 +31,9 @@ The second part is the machine learning portion. A random forest model is built 
 <a id='describe'></a>
 ### File Descriptions
 
-There is one file and one folder. The file __spaceship_titanic__ contains the code for the competition.
-Two files are available in the __data__ folder: spaceship_titanic.zip, and result.csv.<br>
-
-Files
-1. __spaceship_titanic.zip__ contains the following files:
-_train.csv_ -  Personal records for about two-thirds (~8700) of the passengers, to be used as training data. It contains the following columns:
+There are three files:spaceship_titanic.zip, result.csv, and spaceship_titanic.ipynb. The file __spaceship_titanic.ipynb__ contains the code for the competition.<br>
+ __spaceship_titanic.zip__ contains the following files:<br>
+1. _train.csv_ -  Personal records for about two-thirds (~8700) of the passengers, to be used as training data. It contains the following columns:
 - PassengerId - A unique Id for each passenger. Each Id takes the form gggg_pp where gggg indicates a group the passenger is travelling with and pp is their number within the group. People in a group are often family members, but not always.
 - HomePlanet - The planet the passenger departed from, typically their planet of permanent residence.
 - CryoSleep - Indicates whether the passenger elected to be put into suspended animation for the duration of the voyage. Passengers in cryosleep are confined to their cabins.
@@ -47,12 +44,12 @@ _train.csv_ -  Personal records for about two-thirds (~8700) of the passengers, 
 - RoomService, FoodCourt, ShoppingMall, Spa, VRDeck - Amount the passenger has billed at each of the Spaceship Titanic's many luxury amenities.
 - Name - The first and last names of the passenger.
 - Transported - Whether the passenger was transported to another dimension. This is the target, the column you are trying to predict.<br>
-- _test.csv_ - Personal records for the remaining one-third (~4300) of the passengers, to be used as test data. The task is to predict the value of Transported for the passengers in this set.<br>
-_sample_submission.csv_ - A submission file in the correct format. It has the following features:
+2. _test.csv_ - Personal records for the remaining one-third (~4300) of the passengers, to be used as test data. The task is to predict the value of Transported for the passengers in this set.<br>
+3. _sample_submission.csv_ - A submission file in the correct format. It has the following features:
 
 - PassengerId - Id for each passenger in the test set.
 - Transported - The target. For each passenger, predict either True or False.<br>
-2. __result.csv__ - model prediction result appended to the passenger ids:
+__result.csv__ - model prediction result appended to the passenger ids:
 - PassengerId - Id for each passenger in the test set.
 - Transported - Prediction.<br>
 
